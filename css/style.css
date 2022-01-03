@@ -1,6 +1,12 @@
 body {
   font-size: 1vw;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-top: 5.2vw;
+  }
 }
 
 * {
@@ -16,8 +22,13 @@ img {
   margin: 0 auto
 }
 
+/* Step 1 */
 #step1 {
-  height: 5.2vw
+  height: 5.2vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #step1 .inner {
@@ -66,6 +77,40 @@ img {
   top: 33%
 }
 
+#step1 .inner .logo img {
+  width: 100%;
+}
+
+@media (max-width: 1023.98px) {
+  #step1 {
+    height: 16vw;
+    position: fixed;
+    z-index: 1000;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    transition: all .4s ease;
+  }
+
+  #step1.header-white {
+    background-color: white;;
+  }
+  
+  #step1 .inner .button {
+    width: 36.66vw;
+    font-size: 4vw;
+    margin-left: auto;
+  }
+  
+  #step1 .inner .logo {
+    width: 37vw;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+/* Step 2 */
 #step2 {
   height: 41.7vw;
   background-image: url("../images/bg.jpg");
@@ -161,6 +206,59 @@ img {
   background: none
 }
 
+@media (max-width: 1023.98px) {
+  #step2 {
+    height: 160vw;
+    background-image: url("../images/banner-mobile.jpg");
+    position: relative;
+  }
+  
+  #step2 .inner {
+    width: 90%;
+  }
+  
+  #step2 .inner .handle {
+    width: 61.33%;
+    margin-top: 0;
+    position: absolute;
+    bottom: 29.33vw;
+    left: 5%;
+  }
+  
+  #step2 .inner .handle .title {
+    font-size: 8vw;
+  }
+  
+  #step2 .inner .handle .text {
+    font-size: 3.46vw;
+    margin-top: 2vw;
+  }
+  
+  #step2 .inner .handle .button {
+    width: 43vw;
+    font-size: 4vw;
+    margin-top: 5.33vw;
+    padding: 4vw 5.33vw;
+  }
+  
+  #step2 .down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6.66vw;
+    margin: 0 auto;
+    text-align: center;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+    width: 11.33vw;
+  }
+
+  #step2 .down img {
+    width: 11.33vw;
+  }
+}
+
+/* Step 3 */
 #step3 {
   height: 46.8vw;
   display: -webkit-box;
@@ -247,11 +345,6 @@ img {
   margin-top: 1.5%;
   line-height: 1.5;
   font-size: 94%;
-  display: none;
-}
-
-#step3 .sideleft .inner .list ul li.show .text {
-  display: block;
 }
 
 #step3 .sideleft .inner .list ul li .text h3 {
@@ -261,7 +354,12 @@ img {
 
 #step3 .sideleft .inner .list ul li .text p {
   font-weight: normal;
-  font-size: 92%
+  font-size: 92%;
+  display: none;
+}
+
+#step3 .sideleft .inner .list ul li.show .text p {
+  display: block;
 }
 
 #step3 .sideleft .inner .list ul li .expanded {
@@ -368,6 +466,140 @@ img {
   text-align: left
 }
 
+@media (max-width: 1023.98px) {
+  #step3 {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  
+  #step3 .sideleft {
+    height: auto;
+    width: 100%
+  }
+  
+  #step3 .sideleft .inner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 21.33vw 0 22.66vw 0;
+  }
+  
+  #step3 .sideleft .inner .title {
+    font-size: 6vw;
+    text-align: center;
+  }
+  
+  #step3 .sideleft .inner .list {
+    margin-top: 18vw
+  }
+  
+  #step3 .sideleft .inner .list ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  #step3 .sideleft .inner .list ul li {
+    width: 45%;
+    margin-bottom: 9vw;
+    text-align: center;
+  }
+  
+  #step3 .sideleft .inner .list ul li:nth-child(2),
+  #step3 .sideleft .inner .list ul li:nth-child(5),
+  #step3 .sideleft .inner .list ul li:nth-child(8) {
+    margin-left: 0
+  }
+  
+  #step3 .sideleft .inner .list ul li:nth-child(3),
+  #step3 .sideleft .inner .list ul li:nth-child(6),
+  #step3 .sideleft .inner .list ul li:nth-child(9) {
+    margin-left: 0
+  }
+  
+  #step3 .sideleft .inner .list ul li .icon {
+    width: auto
+  }
+
+  #step3 .sideleft .inner .list ul li .icon img {
+    height: 8.66vw;
+  }
+  
+  #step3 .sideleft .inner .list ul li .text {
+    margin-top: 3.5vw;
+  }
+  
+  #step3 .sideleft .inner .list ul li .text h3 {
+    font-size: 2.5vw
+  }
+  
+  #step3 .sideleft .inner .list ul li .text p {
+    font-size: 1.5vw
+  }
+  
+  #step3 .sideleft .inner .list ul li .expanded {
+    font-size: 3.46vw;
+    margin-top: 2vw
+  }
+  
+  #step3 .sideright {
+    width: 100%;
+    height: auto;
+    padding: 15vw 0 17.46vw 0;
+  }
+  
+  #step3 .sideright .inner {
+    width: 88.8%;
+    margin: 0 auto
+  }
+  
+  #step3 .sideright .inner .form {
+    margin-top: 0
+  }
+  
+  #step3 .sideright .inner .form .form-title {
+    font-size: 6vw;
+  }
+  
+  #step3 .sideright .inner .form .fields {
+    width: 100%;
+    margin: 8.66vw auto;
+  }
+  
+  #step3 .sideright .inner .form .fields .input {
+    width: 100%;
+    margin-bottom: 6vw;
+  }
+  
+  #step3 .sideright .inner .form .fields .input input,
+  #step3 .sideright .inner .form .fields .input select {
+    font-size: 3.46vw;
+    padding: 3.5% 0 2%;
+  }
+  
+  #step3 .sideright .inner .form .fields .input label {
+    font-size: 3.46vw;
+  }
+
+  #step3 .sideright .inner .form .submit button {
+    width: 43vw;
+    font-size: 4vw;
+    margin: 0;
+    padding: 4vw 5.33vw;
+    position: relative;
+  }
+
+  #step3 .sideright .inner .form .submit a:after,
+  #step3 .sideright .inner .form .submit button:after {
+    content: '\2192';
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    right: 5.33vw;
+    font-size: 145%;
+    line-height: .8
+  }
+}
+
+/* Step 4 */
 #step4 {
   padding-bottom: 10%;
   position: relative;
@@ -478,6 +710,96 @@ img {
   right: 2%
 }
 
+@media (max-width: 1023.98px) {
+  #step4 {
+    padding: 14.66vw 0 8vw 0;
+  }
+  
+  #step4::after {
+    top: 0;
+    transform: translateY(-55%);
+    width: 30vw;
+    height: 42.66vw;
+    background-position: bottom right;
+    background-size: cover;
+  }
+  
+  #step4 .img {
+    margin-top: 0
+  }
+
+  #step4 .img img,
+  #step4 .img picture {
+    width: 100%;
+  }
+  
+  #step4 .inner {
+    width: 100%;
+    flex-direction: column-reverse;
+    margin-top: 13.33vw;
+  }
+  
+  #step4 .inner .left {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  #step4 .inner .left .handle {
+    position: static;
+  }
+  
+  #step4 .inner .left .handle .title {
+    font-size: 6vw;
+  }
+  
+  #step4 .inner .left .handle .list .how {
+    position: absolute;
+    width: 13%;
+    top: 7vw;
+    left: 0
+  }
+
+  #step4 .inner .left .handle .list .how img {
+    width: 100%;
+  }
+  
+  #step4 .inner .left .handle .list ul {
+    list-style-type: none;
+    margin-left: 16.66vw;
+    margin-top: 8.66vw
+  }
+  
+  #step4 .inner .left .handle .list ul li {
+    margin-bottom: 5vw
+  }
+  
+  #step4 .inner .left .handle .list ul li h3 {
+    font-size: 1.85vw;
+    font-weight: 600;
+  }
+  
+  #step4 .inner .left .handle .list ul li p {
+    font-size: 1.5vw;
+    margin-top: 2vw;
+    padding-right: 0
+  }
+  
+  #step4 .inner .right {
+    width: 100%
+  }
+  
+  #step4 .inner .right .right_img {
+    width: 100%;
+    margin-top: 0;
+    position: relative;
+    top: 0%;
+    right: auto;
+    left: -15%
+  }
+}
+
+/* Step 5 */
 #step5 {
   background-color: #F7F7F7;
   position: relative;
@@ -566,6 +888,50 @@ img {
   align-self: center
 }
 
+@media (max-width: 1023.98px) {
+  #step5 {
+  }
+  
+  #step5::after {
+    transform: translateY(-25%);
+    left: auto;
+    right: 0;
+    width: 36vw;
+    height: 38.4vw;
+    background-image: url('../images/plus-grid-blue.svg');
+    background-position: top right;
+  }
+  
+  #step5 .inner {
+    width: 90%;
+    padding-top: 52.66vw;
+    padding-bottom: 54.66vw;
+  }
+  
+  #step5 .inner .title h2 {
+    font-size: 6vw;
+    line-height: 1.2;
+  }
+
+  #step5 .inner .text {
+    margin-top: 4vw;
+  }
+  
+  #step5 .inner .text p {
+    font-size: 1.5vw;
+    line-height: 1.45;
+    color: #646464
+  }
+  
+  #step5 .inner .button {
+    width: 43vw;
+    font-size: 4vw;
+    margin-top: 5.33vw;
+    padding: 4vw 5.33vw;
+  }
+}
+
+/* Step 6 */
 #step6 {
   background-color: #0F394A;
   padding-top: 3.5%;
@@ -592,6 +958,34 @@ img {
   text-align: center;
   font-size: 90%;
   margin-top: 1.5%
+}
+
+@media (max-width: 1023.98px) {
+  #step6 {
+    padding: 0 5%;
+    padding-top: 12vw;
+    padding-bottom: 8vw;
+  }
+  
+  #step6 .inner .logo {
+    width: 57.33vw;
+    margin: 0 auto;
+    margin-bottom: 12vw;
+  }
+  
+  #step6 .inner .logo img {
+    width: 57.33vw;
+  }
+  
+  #step6 .inner .text1 {
+    margin-top: 0;
+    font-size: 1.3vw!important;
+  }
+  
+  #step6 .inner .text2 {
+    font-size: 1.3vw!important;
+    margin-top: 4.5vw
+  }
 }
 
 @keyframes bounce {

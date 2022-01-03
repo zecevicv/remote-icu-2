@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46.1" height="46.1" viewBox="0 0 46.1 46.1">
+  <g id="online_medical_consultation-diagnosis" data-name="online medical consultation-diagnosis" transform="translate(0.75 0.75)">
+    <g id="_Grupo_" data-name="&lt;Grupo&gt;" transform="translate(0 11.51)">
+      <g id="Group_681" data-name="Group 681">
+        <path id="Path_254" data-name="Path 254" d="M968,368.177V347.316A4.316,4.316,0,0,1,972.316,343h5.755" transform="translate(-966.561 -343)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_255" data-name="Path 255" d="M1022.071,368.177V347.316a4.316,4.316,0,0,0-4.316-4.316H1012" transform="translate(-978.91 -343)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_256" data-name="Path 256" d="M1005.564,387.035H971.036A5.036,5.036,0,0,1,966,382h17.984v1.439h8.632V382H1010.6A5.036,5.036,0,0,1,1005.564,387.035Z" transform="translate(-966 -353.945)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="doctor" transform="translate(5.033 0)">
+      <path id="Path_257" data-name="Path 257" d="M973,369.7l0-5.5a7.193,7.193,0,0,1,4.13-6.512l8.1-3.81.719-2.877" transform="translate(-972.997 -333.735)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_258" data-name="Path 258" d="M1015.948,369.7l0-5.5a7.193,7.193,0,0,0-4.13-6.512l-8.1-3.81L1003,351" transform="translate(-981.417 -333.735)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_259" data-name="Path 259" d="M996.774,344.955c3.9-1.671,4.326-5.2,4.751-8.661a9.485,9.485,0,0,0-.6-5.6,6.962,6.962,0,0,0-4-3.22,9.168,9.168,0,0,0-5.815,0,6.962,6.962,0,0,0-4,3.22,9.479,9.479,0,0,0-.6,5.6c.424,3.464.852,6.99,4.75,8.661" transform="translate(-976.745 -327)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <path id="Path_260" data-name="Path 260" d="M990,355c0,3.6,5.036,7.194,5.036,7.194s5.035-3.6,5.035-7.194" transform="translate(-977.769 -334.858)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
+      <g id="Group_682" data-name="Group 682" transform="translate(4.318 20.142)">
+        <path id="Path_261" data-name="Path 261" d="M988.579,355c-4.316,2.158-3.6,7.194-3.6,7.194" transform="translate(-980.666 -355)" fill="none" stroke="#e40303" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_262" data-name="Path 262" d="M1004,355c3.6.719,3.6,7.194,3.6,7.194v2.877" transform="translate(-986.016 -355)" fill="none" stroke="#e40303" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Path_263" data-name="Path 263" d="M981.158,373.632H979v-2.877c0-3.165,1.942-5.755,4.316-5.755h0c2.374,0,4.316,2.59,4.316,5.755v2.877h-2.158" transform="translate(-979 -357.806)" fill="none" stroke="#e40303" stroke-miterlimit="10" stroke-width="1.5"/>
+        <circle id="Ellipse_7" data-name="Ellipse 7" cx="2" cy="2" r="2" transform="translate(19.418 10.458)" fill="none" stroke="#e40303" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

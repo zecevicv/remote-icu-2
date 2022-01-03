@@ -246,7 +246,12 @@ img {
 #step3 .sideleft .inner .list ul li .text {
   margin-top: 1.5%;
   line-height: 1.5;
-  font-size: 94%
+  font-size: 94%;
+  display: none;
+}
+
+#step3 .sideleft .inner .list ul li.show .text {
+  display: block;
 }
 
 #step3 .sideleft .inner .list ul li .text h3 {
@@ -269,14 +274,19 @@ img {
   background: none;
   border: 0;
   font-size: inherit;
-  color: inherit
+  color: inherit;
+  cursor: pointer;
 }
 
 #step3 .sideleft .inner .list ul li .expanded button:after {
-  content: '-';
+  content: '+';
   color: #E40303;
   position: relative;
   left: 10%
+}
+
+#step3 .sideleft .inner .list ul li.show .expanded button:after {
+  content: '-';
 }
 
 #step3 .sideright {
@@ -359,7 +369,21 @@ img {
 }
 
 #step4 {
-  padding-bottom: 10%
+  padding-bottom: 10%;
+  position: relative;
+}
+
+#step4::after {
+  content: '';
+  position: absolute;
+  top: -7vw;
+  left: 0;
+  width: 23.43vw;
+  height: 14.32vw;
+  background-image: url('../images/plus-grid-blue.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
 }
 
 #step4 .img {
@@ -455,7 +479,22 @@ img {
 }
 
 #step5 {
-  background-color: #F7F7F7
+  background-color: #F7F7F7;
+  position: relative;
+}
+
+#step5::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 7.3vw;
+  width: 23.43vw;
+  height: 7.5vw;
+  background-image: url('../images/plus-grid-blue.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
 }
 
 #step5 .inner {
